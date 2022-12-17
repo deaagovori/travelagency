@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADVENTURE-DEA GOVORI</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap">
+    </head>
+    <body>
+
+        <div class="navbar">
+            <h1 class="logo">ADVENTURE</h1>
+            <ul class="nav-links">
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#events">EVENTS</a></li>
+                <li><a href="#tours">TOURS</a></li>
+                <li class="ctn"><a href="#contact">CONTACT</a></li>
+            </ul>
+            <img src="img/menu-btn.png" alt="" class="menu-btn">
+        </div>
+        <header>
+           <div class="header-content" id="home">
+            <h2>Explore The World</h2>
+            <div class="line"></div>
+                <h1>TRAVEL AGENCY</h1>
+                <a href="#" class="ctn">Learn More</a>
+           </div> 
+        </header>
+
+        <section class="events" id="events">
+            <div class="title">
+                <h1>Upcoming Events</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./img/img1.jpg" alt="">
+                    <h4>Visit Prague</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam sapiente expedita architecto laudantium quam omnis laboriosam illo? Vitae repellendus quibusdam cum modi cumque corrupti tempora quod illo et assumenda.
+                    </p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                    <img src="./img/img2.jpg" alt="">
+                    <h4>Visit New York</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam sapiente expedita architecto laudantium quam omnis laboriosam illo? Vitae repellendus quibusdam cum modi cumque corrupti tempora quod illo et assumenda.
+                    </p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="tours" id="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>
+                        UPCOMING TOURS & DESTINATIONS
+                    </h1>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas consequuntur animi voluptate deleniti, quam ullam nostrum repellat error facere recusandae cum fuga dolore architecto aliquam soluta obcaecati quis dolorem dignissimos!</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="./img/img3.jpg" alt="">
+                        <img src="./img/img4.jpg" alt="">
+                        <img src="./img/img5.jpg" alt="">
+                        <img src="./img/img6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer" id="contact">
+            <p>Dea Govori. Extra Assigment</p>
+            <p>Web and Mobile I</p>
+        </section>
+
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+
+
+    </body>
+</html>
